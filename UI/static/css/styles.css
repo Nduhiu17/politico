@@ -86,29 +86,6 @@ html,body{
     border-radius: 4px;
 }
 
-.table-row1{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    height: 3em;
-}
-
-.table-row1 > div{
-    margin: 8px;
-    align-self: center;
-}
-
-.table-header{
-    color: black;
-    display: flex;
-    justify-content: space-between;
-    margin: 5px;
-    background-color: #ffaf30;
-    padding: 20px;
-    text-transform: uppercase;
-}
-
-
 .office-details-header {
     color: #171616;
     background-image: url(logo3.jpeg);
@@ -135,4 +112,10 @@ html,body{
     background-color: #ffaf30;
     padding: 10px;
     text-transform: uppercase;
+}
+
+@media(max-width:769px){
+    .office-details-header  {
+        background-image: none;
+      }
 }
