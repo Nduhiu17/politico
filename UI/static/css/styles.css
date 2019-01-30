@@ -201,7 +201,7 @@ td {
 .main-form-container{
     display: flex;
     color: #171616;
-    margin-top: 45px;
+    /* margin-top: 45px; */
 }
 
 .container-form{
@@ -238,3 +238,11 @@ input[type=text],input[type=email], input[type=password],select {
     cursor: pointer;
   }
   
+  .sign-up-heading {
+    color: #3359DF;
+    font-size: 30px;
+    font-weight: bolder;
+    text-transform: capitalize;
+    margin: 20px;
+    text-align: center;
+}
