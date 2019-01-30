@@ -145,3 +145,51 @@ td {
     box-shadow: 0 0 1px 1px rgba(20,23,28,0.1), 0 3px 1px 0 rgba(20,23,28,0.1);
   }
 
+ 
+  .right-div > div {
+    padding: 10px;
+}
+  
+  .left-div{
+      display: flex;
+      align-self: center;
+}
+
+.profile-photo {
+    width: 30vh;
+    height: 30vh;
+    align-items: center;
+}
+
+ .profile-photo img {
+    height: 100%;
+    width: 100%;
+ }
+
+ .main-body{
+    display: flex;
+    color: #171616;
+    justify-content: center;
+    position: absolute;
+    height: auto;
+    width: 400px;
+    margin: -100px 0 0 -200px;
+    top: 50%;
+    left: 50%;
+    border: 1px solid #b7b7b9;
+    border-radius: 4%;
+}
+
+.vote-div {
+    background-color: #3359DF;
+    border-radius: 30px;
+    margin-left: 5px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-around;
+    margin: 7px;
+}
+.vote-div > p {
+    color: white;
+}
+
