@@ -4,15 +4,18 @@ html,body{
     font-size: 12.5px;
     color: #fff;
     margin: 0;
-    background-color: aliceblue;
 
 }
 
-.navbar{
+.navbar {
     display: flex;
-    background-color: #3359DF;
+    background: #FFF;
     padding: 0px 10px;
+    box-shadow: 0 0 1px 1px rgba(20,23,28,0.1), 0 3px 1px 0 rgba(20,23,28,0.1);
+    color: black;
 }
+
+
 
 .logo {
     height: 8vh;
@@ -43,12 +46,13 @@ html,body{
 
 .footer{
     text-align: center;
-    color: #fff;
+    color: black;
     width: 100%;
     height: 4em;
     position: fixed;
     bottom: 0;
-    background-color: #3359DF;
+    background: #FFF;
+    box-shadow: 0 0 1px 1px rgba(20,23,28,0.1), 0 3px 1px 0 rgba(20,23,28,0.1);
 }
 
 .footer > p{
@@ -119,3 +123,32 @@ html,body{
         background-image: none;
       }
 }
+
+  
+.offices-details tr:hover {
+      background-color: #ddd;
+    }
+  
+.offices-details th{
+    text-align: left;
+    background-color: #3359DF;
+    color: #fff;
+  }
+  .offices-details tr {
+    text-align: left;
+    color: rgb(8, 8, 8);
+  }
+
+  .offices-details td,.offices-details th {
+    border: 1px solid #ddd;
+    padding: 15px;
+}
+
+td {
+    width: 25% ;
+  }
+
+  .offices-details {
+    border-collapse: collapse;
+    box-shadow: 0 0 1px 1px rgba(20,23,28,0.1), 0 3px 1px 0 rgba(20,23,28,0.1);
+  }
