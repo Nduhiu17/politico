@@ -266,3 +266,12 @@ input[type=text],input[type=email], input[type=password],select {
         width: 100%;
       }
 }
+
+.sign-in-heading{
+    color: #3359DF;
+    font-size: 30px;
+    font-weight: bolder;
+    text-transform: capitalize;
+    margin: 28px;
+    text-align: center;
+}
