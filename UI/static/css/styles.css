@@ -108,15 +108,6 @@ html,body{
     align-self: center;
 }
 
-.table-header-office-details {
-    color: black;
-    display: flex;
-    justify-content: space-between;
-    margin: 5px;
-    background-color: #ffaf30;
-    padding: 10px;
-    text-transform: uppercase;
-}
 
 @media(max-width:769px){
     .office-details-header  {
