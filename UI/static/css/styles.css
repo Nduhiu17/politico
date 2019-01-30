@@ -193,3 +193,48 @@ td {
     color: white;
 }
 
+.sign-up-form{
+    display: flex;
+    flex-direction: column;
+}
+
+.main-form-container{
+    display: flex;
+    color: #171616;
+    margin-top: 45px;
+}
+
+.container-form{
+    width: 40%;
+}
+
+.right-form-container{
+    width: 30%;
+}
+
+.left-form-container{
+    width: 30%;
+}
+
+input[type=text],input[type=email], input[type=password],select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    box-shadow: 0 0 1px 1px rgba(20,23,28,0.1), 0 3px 1px 0 rgba(20,23,28,0.1);
+  }
+  
+  input[type=submit] {
+    width: 25%;
+    background-color: #3359DF;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
