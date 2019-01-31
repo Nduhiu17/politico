@@ -390,3 +390,7 @@ input[type=text],input[type=email], input[type=password],select {
 .delete-party{
     background-color: red;
 }
+
+.apply{
+    background-color: green;
+}
