@@ -182,7 +182,7 @@ td {
 
 .vote-div {
     background-color: #3359DF;
-    border-radius: 30px;
+    border-radius: 12px;
     margin-left: 5px;
     font-weight: bold;
     display: flex;
@@ -328,4 +328,16 @@ input[type=text],input[type=email], input[type=password],select {
     margin: 4px 2px;
     cursor: pointer;
     border-radius: 10px;
+}
+
+.statistic-data {
+    margin-right: 12px;
+}
+
+.statistics-header {
+    font-size: 16px;
+    font-weight: 900;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 10px;
 }
