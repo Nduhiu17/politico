@@ -394,3 +394,11 @@ input[type=text],input[type=email], input[type=password],select {
 .apply{
     background-color: green;
 }
+
+.application-details{
+    margin: 5px;
+}
+
+.p-details{
+    margin: 5px;
+}
