@@ -182,7 +182,7 @@ td {
 
 .vote-div {
     background-color: #3359DF;
-    border-radius: 30px;
+    border-radius: 12px;
     margin-left: 5px;
     font-weight: bold;
     display: flex;
@@ -283,3 +283,75 @@ input[type=text],input[type=email], input[type=password],select {
     box-shadow: 0 0 1px 1px rgba(20,23,28,0.1), 0 3px 1px 0 rgba(20,23,28,0.1);
 }
   
+.top-profile-header{
+    height: 37vh;
+    background-image: url('logo2.jpeg');
+    margin: 2px;
+}
+.main-profile-body{
+    color: #171616;
+    display: flex;
+    justify-content: space-between;
+}
+
+.personal-details {
+    width: 25%;
+}
+
+.photo-details {
+    height: 32vh;
+    margin-top: -115px;
+    margin-left: 2px;
+}
+
+.photo-details > .fname-details ,.lname-details,.change-password-details{
+    margin: 15px 0px 15px 2px;
+
+}
+
+.fname-details{
+    margin-top: 15px;
+    margin-left: 2px;
+}
+
+.photo-details img{
+    height: 100%;
+    width: 100%;
+}
+
+.button {
+    background-color: #3359DF;
+    border: none;
+    color: white;
+    padding: 17px 23px;
+    font-size: 13px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.statistic-data {
+    margin-right: 12px;
+}
+
+.statistics-header {
+    font-size: 16px;
+    font-weight: 900;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 10px;
+}
+
+@media(max-width:469px){
+    .main-profile-body{
+        display: flex;
+        flex-direction: column;
+      }
+}
+
+@media(max-width:469px){
+    .personal-details,.logo{
+      width: 100%;
+      }
+}
+
