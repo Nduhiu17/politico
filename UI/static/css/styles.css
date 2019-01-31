@@ -275,3 +275,11 @@ input[type=text],input[type=email], input[type=password],select {
     margin: 28px;
     text-align: center;
 }
+
+
+  textarea.petition {
+    width: -webkit-fill-available;
+    height: 200px;
+    box-shadow: 0 0 1px 1px rgba(20,23,28,0.1), 0 3px 1px 0 rgba(20,23,28,0.1);
+}
+  
