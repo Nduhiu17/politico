@@ -341,3 +341,17 @@ input[type=text],input[type=email], input[type=password],select {
     text-transform: uppercase;
     margin: 10px;
 }
+
+@media(max-width:469px){
+    .main-profile-body{
+        display: flex;
+        flex-direction: column;
+      }
+}
+
+@media(max-width:469px){
+    .personal-details,.logo{
+      width: 100%;
+      }
+}
+
