@@ -350,7 +350,7 @@ input[type=text],input[type=email], input[type=password],select {
 }
 
 @media(max-width:469px){
-    .personal-details,.logo{
+    .personal-details,{
       width: 100%;
       }
 }
@@ -359,4 +359,34 @@ input[type=text],input[type=email], input[type=password],select {
     margin: 21px;
     color: #171616;
     text-align: center;
+}
+
+.party-contents{
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+}
+
+.party-contents > div{
+    margin: 10px;
+}
+
+.party-buttons{
+    color: #fff;
+    display: flex;
+}
+
+.party-buttons > div {
+    margin: 10px;
+    padding: 16px;
+    border-radius: 11px;
+    font-size: 16px;
+}
+
+.edit-party{
+    background-color: #3359DF;
+}
+
+.delete-party{
+    background-color: red;
 }
