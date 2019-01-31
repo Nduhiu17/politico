@@ -355,3 +355,8 @@ input[type=text],input[type=email], input[type=password],select {
       }
 }
 
+.all-parties-heading{
+    margin: 21px;
+    color: #171616;
+    text-align: center;
+}
