@@ -422,3 +422,21 @@ input[type=submit]:hover{
     background: #005ff9;
 }
 
+@media(max-width:469px){
+    .main-profile-body{
+        width: 100%;
+        color: #0a0202;
+        font-weight: 800;
+        font-size: 17px;
+        padding-bottom: 64px;
+      }
+}
+
+
+@media(max-width:469px){
+    .photo-details img{
+        height: 100%;
+        width: auto;
+      }
+}
+
