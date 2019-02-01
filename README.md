@@ -50,10 +50,12 @@ The following are the templates screenshots:
 ### 9. User Profile page
 ![screenshot from 2019-02-01 13-28-57](https://user-images.githubusercontent.com/30591881/52117680-5a2c2a00-2625-11e9-8c41-361fdad78340.png)
 
-### Page that modifies a party
+### 10. Page that modifies a party
 ![screenshot from 2019-02-01 13-32-09](https://user-images.githubusercontent.com/30591881/52117856-d4f54500-2625-11e9-8fd2-0e713a7f1368.png)
 
-### Page that a politician will use to apply for candidature
+### 11. Page that a politician will use to apply for candidature
 ![screenshot from 2019-02-01 13-33-20](https://user-images.githubusercontent.com/30591881/52117948-1128a580-2626-11e9-99f7-e5db7091a71d.png)
 
+### 12. Page that creates a political office
+![screenshot from 2019-02-01 14-10-00](https://user-images.githubusercontent.com/30591881/52119809-69ae7180-262b-11e9-98c1-76f82bbbeb66.png)
 
