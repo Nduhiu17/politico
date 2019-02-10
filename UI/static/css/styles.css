@@ -368,6 +368,7 @@ input[type=text],input[type=email], input[type=password],select {
     display: flex;
     flex-direction: column;
     font-size: 14px;
+    min-width: 100%;
 }
 
 .party-contents > div{
@@ -443,3 +444,13 @@ input[type=submit]:hover{
       }
 }
 
+
+.party-container{
+    display: flex;
+    flex-direction: row;
+    min-width: 100%;
+}
+
+.party-container-wrapper {
+    display: flex;
+}
