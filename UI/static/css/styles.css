@@ -378,13 +378,7 @@ input[type=text],input[type=email], input[type=password],select {
 .party-buttons{
     color: #fff;
     display: flex;
-}
-
-.party-buttons > div {
-    margin: 10px;
-    padding: 16px;
-    border-radius: 11px;
-    font-size: 16px;
+    margin: 5px;
 }
 
 .edit-party{
@@ -453,4 +447,18 @@ input[type=submit]:hover{
 
 .party-container-wrapper {
     display: flex;
+}
+
+@media(max-width:649px){
+    .party-container-wrapper{
+        display: flex;
+        flex-direction: column-reverse;
+      }
+}
+
+.party-buttons > div {
+    margin: 8px;
+    padding: 10px;
+    border-radius: 11px;
+    /* font-size: 16px; */
 }
