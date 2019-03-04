@@ -2,6 +2,9 @@
 let baseUrl = 'https://politico-api-server.herokuapp.com';
 let currentToken = `Bearer ${localStorage.getItem("token")}`;//getting token from local storage and assigning it to a reusable variable
 
+if(localStorage.getItem("token") == null){
+    window.location.replace("signin.html");
+}
 let loadOffices = () => {
     getOffices(`${baseUrl}/api/v2/offices`).then(res => {
         const allData = res.data;
@@ -33,8 +36,43 @@ const generateAllOffices = (allData) => {//function that renders the offices to 
     return output
 };
 
-let goToOfficeDetailsPage = (officeId) => {
+let goToOfficeDetailsPage = (officeId) => {//function that directs to office-details page
     localStorage.setItem("officeId",officeId)
     window.location.replace("office-details.html");
 }
 
+const postOfficeApi = (data)=>{//function to post data to the api
+    return fetch('https://politico-api-server.herokuapp.com/api/v2/offices', {
+        method: 'POST',
+        headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json',
+             Authorization: currentToken
+        },
+        body: JSON.stringify(data)
+
+        })
+        .then((res) =>{
+            return res.json()
+        })
+};
+
+
+
+let postOffice = () => {//function that collects offices details from forms
+    let name = document.getElementById('office-name').value;
+    let office_type = document.getElementById('office-type').value;
+    let data = {//asigning variables to log in details
+        name: name,
+        office_type: office_type
+    }
+
+    postOfficeApi(data).then(res=> {//checking for errors
+        if(res.error){
+            window.alert(res.error)
+        }else {
+            if (res.status === 201) {//checking a successful office creation
+                window.location.replace("index.html");//redirecting to home page after a successful login
+            }
+    }})
+}
