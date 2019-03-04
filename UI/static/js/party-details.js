@@ -2,9 +2,6 @@ const id = localStorage.getItem("partyId");
 let currentToken = `Bearer ${localStorage.getItem("token")}`;
 
 
-
-
-
 const getPartyDetail = () => {//function that gets party details from api
     return fetch(`https://politico-api-server.herokuapp.com/api/v2/parties/${id}`, {
         method: "GET",
@@ -39,4 +36,25 @@ const onloadPartyDetailsPage = () =>{//function that loads data to html page
         document.getElementById('party-details-main').innerHTML = generatePartyDetail(res.data);
     })
 
+}
+
+const deleteParty = () => {
+    deleteApi(id).then(res => {
+        if(res.status == 204){//check for successful delete
+            window.location.replace("parties.html");
+        }
+         if(res.error){//check for error
+            window.alert(res.error)//alerting the error messages
+        }
+
+    })
+}
+
+
+const deleteApi = (id) =>{//function to delete a party
+    let currentToken = `Bearer ${localStorage.getItem("token")}`;
+     return fetch(`https://politico-api-server.herokuapp.com/api/v2/parties/${id}`, {
+        method: "DELETE",
+        headers: {"Content-Type": "application/json;charset=UTF-8", Authorization: currentToken}
+    }).then(res => res.json())
 }
