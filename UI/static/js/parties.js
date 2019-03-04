@@ -75,3 +75,8 @@ const generateAllParties = (allData) => {//function to render parties to html
     });
     return output
 };
+
+let goToPartyDetailsPage = (partyId) => {
+    localStorage.setItem("partyId",partyId)
+    window.location.replace("party-details.html");
+}

@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./static/css/styles.css">
     <title>Party Details</title>
 </head>
-<body>
+<body onload="onloadPartyDetailsPage()">
     <div class="navbar">
         <div class="nav-logo">
             <div class="logo-img">
@@ -40,29 +40,15 @@
                 <div class="sign-in-heading">
                     Party Details
                 </div>
-            <div class="party-container-wrapper">
-                <div class="party-contents">
-                    <div class="party-name-details">
-                       Party Name: Democrats
-                    </div>
-                    <div class="party-slogan-details">
-                        Party Slogan:
-                        <p>Together we can make!!!Together we can make!!!Together we can make!!!</p>
-                        <p>Vote for Democrats secure the future for you and for your generation!!!</p>
-                    </div>
+                <div id="party-details-main">
+
                 </div>
-                <div class="party-logo-details">
-                    <div class="profile-photo">
-                            <img src="./images/republican.jpeg" alt="photo">
-                    </div>
-                </div>
-            </div>
             <div class="party-buttons">
                 <div class="edit-party">
-                 <a href="edit-political-party.html">Edit</a>
+                    <button class="edit-party" id="edit-party-button" onclick="updateParty()">Edit</button>
                 </div>
                 <div class="delete-party">
-                    Delete
+                    <button class="delete-party" id="delete-party-button" onclick="deleteParty()">Delete</button>
                 </div>
                 <div class="apply">
                   <a href="apply-candindature.html">Apply for an Office</a>
@@ -73,6 +59,7 @@
 
         </div>
         </div>
+    <script src="static/js/party-details.js"></script>
     <div class="footer">
         <p>&copy; 2019 Politico</p>
     </div>
