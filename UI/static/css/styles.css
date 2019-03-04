@@ -71,6 +71,7 @@ html,body{
 .main-container{
     display: flex;
     flex-direction: column;
+    text-transform: capitalize;
 }
 
 .main-table{
@@ -116,11 +117,11 @@ html,body{
       }
 }
 
-  
+
 .offices-details tr:hover {
       background-color: #ddd;
     }
-  
+
 .offices-details th{
     text-align: left;
     background-color: #3359DF;
@@ -148,11 +149,11 @@ td {
     min-width: 100%;
   }
 
- 
+
   .right-div > div {
     padding: 10px;
 }
-  
+
   .left-div{
       display: flex;
       align-self: center;
@@ -172,15 +173,9 @@ td {
  .main-body{
     display: flex;
     color: #171616;
-    justify-content: center;
-    position: absolute;
-    height: auto;
-    width: 400px;
-    margin: -100px 0 0 -200px;
-    top: 50%;
-    left: 50%;
     border: 1px solid #b7b7b9;
-    border-radius: 4%;
+    border-radius: 1%;
+    margin: 20px;
 }
 
 .vote-div {
@@ -228,7 +223,7 @@ input[type=text],input[type=email], input[type=password],select {
     box-sizing: border-box;
     box-shadow: 0 0 1px 1px rgba(20,23,28,0.1), 0 3px 1px 0 rgba(20,23,28,0.1);
   }
-  
+
   input[type=submit] {
     width: 25%;
     background-color: #3359DF;
@@ -239,7 +234,7 @@ input[type=text],input[type=email], input[type=password],select {
     border-radius: 4px;
     cursor: pointer;
   }
-  
+
   .sign-up-heading {
     color: #3359DF;
     font-size: 30px;
@@ -285,7 +280,7 @@ input[type=text],input[type=email], input[type=password],select {
     height: 200px;
     box-shadow: 0 0 1px 1px rgba(20,23,28,0.1), 0 3px 1px 0 rgba(20,23,28,0.1);
 }
-  
+
 .top-profile-header{
     height: 37vh;
     background-image: url('logo2.jpeg');
@@ -461,4 +456,32 @@ input[type=submit]:hover{
     padding: 10px;
     border-radius: 11px;
     /* font-size: 16px; */
+}
+
+
+button.login-button {
+    width: 25%;
+    background-color: #3359DF;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+@media(max-width:649px){
+    button.login-button {
+        width: 100%;
+      }
+}
+
+
+
+button.delete-party{
+    border: none;
+}
+
+button.edit-party{
+    border: none;
 }
