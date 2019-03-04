@@ -37,24 +37,35 @@
             <div class="sign-up-heading">
                 Register 
             </div>
-            <form class="sign-up-form"> 
+            <form class="sign-up-form" onsubmit="event.preventDefault(); register(event)">//calling the client register function
                 <label>First Name</label>
-                <input type="text"placeholder="Your first name">
+                <input type="text"placeholder="Your first name" id="signup-fname">
                 <label >Last Name</label>
-                <input type="text" placeholder="Your last name..">
+                <input type="text" placeholder="Your last name.." id="signup-lname">
+                <label >Other Name</label>
+                <input type="text" placeholder="Your other name.." id="signup-oname">
                 <label >Email</label>
-                <input type="email" placeholder="Your email..">
+                <input type="email" placeholder="Your email.." id="signup-email">
+                <label >County</label>
+                <input type="text" placeholder="Your county..." id="signup-county">
+                <label >Phone Number</label>
+                <input type="text" placeholder="Your phone number.." id="signup-phone">
+                <label >National ID</label>
+                <input type="text" placeholder="Your national ID.." id="signup-nationalid">
+                <label >Passport Url</label>
+                <input type="text" placeholder="Your passport url.." id="signup-passporturl">
                 <label >Password</label>
-                <input type="password" placeholder="Enter password..">
+                <input type="password" placeholder="Enter password.." id="signup-password">
                 <label >Repeat Password</label>
-                <input type="password" placeholder="Repeat password..">
-                <input type="submit" value="Sign up">
+                <input type="password" placeholder="Repeat password.." id="signup-rpassword">
+                <button class="login-button" type="submit">Sign Up</button>
             </form>
         </div>
         <div class="right-form-container">
 
         </div>
     </div>
+    <script src="static/js/auth.js"></script>
     <div class="footer">
         <p>&copy; 2019 Politico</p>
     </div>
