@@ -8,7 +8,7 @@
     <title>Political Offices</title>
     <link rel="stylesheet" href="./static/css/styles.css">
 </head>
-<body>
+<body onload="loadOffices()">
     <div class="container">
         <div class="navbar">
             <div class="nav-logo">
@@ -24,51 +24,27 @@
                <a href="parties.html">Parties</a>
                </div>
                <div class="sign-in">
-                 <a href="create-party.html">Create Party</a> 
+                 <a href="create-party.html">Create Party</a>
                </div>
                <div class="sign-in">
-                <a href="create-office.html">Create Office</a> 
+                <a href="create-office.html">Create Office</a>
               </div>
                <div class="profile-div">
-                  <a href="profile.html">Profile</a> 
+                  <a href="profile.html">Profile</a>
                </div>
                <div class="profile-div">
-               <a href="signin.html">Logout</a> 
+               <a href="signin.html">Logout</a>
             </div>
            </div>
         </div>
-        <div class="main-container">
+        <div class="main-container" >
             <div class="container-title">
                 <p>Political Offices</p>
             </div>
-            <table class="offices-details">
-                <tr>
-                  <th>Office Name</th>
-                  <th>County</th>
-                  <th>Registered voters</th>
-                </tr>
-                <tr>
-                  <td> <a href="office-details.html">Governor</a></td>
-                  <td>Nairobi</td>
-                  <td>10000</td>
-                </tr>
-                <tr>
-                    <td><a href="office-details.html">Senator</a></td>
-                    <td>Nairobi</td>
-                    <td>10000</td>
-                </tr>
-                  <tr>
-                    <td><a href="office-details.html">Women Rep</a></td>
-                    <td>Nairobi</td>
-                    <td>10000</td>
-                 </tr>
-                  <tr>
-                    <td>Governor</td>
-                    <td>Nairobi</td>
-                    <td>10000</td>
-                  </tr>
+            <table class="offices-details" id="main-container-offices">
             </table>
         </div>
+        <script src="static/js/offices.js"></script>
         <div class="footer">
             <p>&copy; 2019 Politico</p>
         </div>
