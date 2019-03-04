@@ -43,14 +43,12 @@
             <div class="sign-in-heading">
                 Register an Ofice 
             </div>
-            <form class="sign-up-form"> 
+            <form class="sign-up-form" onsubmit="event.preventDefault(); postOffice(event)">
                 <label >Office Name</label>
-                <input type="text" placeholder="office name..">
-                <label >County</label>
-                <input type="text" placeholder="County..">
+                <input type="text" placeholder="office name.." id="office-name">
                 <label >Office Type</label>
-                <input type="text" placeholder="Office type..">
-                <input type="submit" value="Create">
+                <input type="text" placeholder="Office type.." id="office-type">
+                <button class="login-button" type="submit">Create</button>
             </form>
         </div>
         <div class="right-form-container">
@@ -58,4 +56,5 @@
         </div>
     </div>
 </body>
+<script src="static/js/offices.js"></script>
 </html>

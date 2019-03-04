@@ -2,6 +2,10 @@ const id = localStorage.getItem("officeId");
 const el = document.querySelector("#office-details-main");
 let currentToken = `Bearer ${localStorage.getItem("token")}`;
 
+if(localStorage.getItem("token") == null) {
+    window.location.replace("signin.html");
+}
+
 const getOfficeDetail = () => {//getting office details from the api
     return fetch(`https://politico-api-server.herokuapp.com/api/v2/offices/${id}`,{ method: "GET",headers: { "Content-Type": "application/json;charset=UTF-8", Authorization: currentToken}}).then(res => res.json())
 };
