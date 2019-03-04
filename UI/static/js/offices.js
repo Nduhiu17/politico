@@ -33,4 +33,8 @@ const generateAllOffices = (allData) => {//function that renders the offices to 
     return output
 };
 
+let goToOfficeDetailsPage = (officeId) => {
+    localStorage.setItem("officeId",officeId)
+    window.location.replace("office-details.html");
+}
 
