@@ -7,7 +7,7 @@
     <title>Office Details</title>
     <link rel="stylesheet" href="./static/css/styles.css">
 </head>
-<body>
+<body onload="getOfficeDetail()">
     <div class="container">
             <div class="navbar">
                 <div class="nav-logo">
@@ -20,16 +20,16 @@
                 </div>
                 <div class="nav-items">
                     <div class="sign-up">
-                    <a href="create-party.html">Create Party</a>    
+                    <a href="create-party.html">Create Party</a>
                     </div>
                     <div class="sign-in">
-                      <a href="create-petition.html">Create Petition</a> 
+                      <a href="create-petition.html">Create Petition</a>
                     </div>
                     <div class="profile-div">
-                      <a href="profile.html">Profile</a>  
+                      <a href="profile.html">Profile</a>
                     </div>
                     <div class="profile-div">
-                   <a href="signin.html">Logout</a> 
+                   <a href="signin.html">Logout</a>
                     </div>
                 </div>
             </div>
@@ -37,50 +37,23 @@
                 <div class="container-title">
                     <p>Office Details</p>
                 </div>
-                <div class="office-details-header">
-                    <div class="name-detail">
-                        <p>Name: Governor</p>
-                    </div>
-                    <div class="conty-detail">
-                        <p>County: Nairobi</p>
-                    </div>
-                    <div class="vote-detail">
-                        <p>Registered voters: 1000000</p>
+                <div id="office-details-main">
+                    <div class="office-details-header">
+                        <div class="name-detail">
+                            <p>Name: Governor</p>
+                        </div>
+                        <div class="conty-detail">
+                            <p>County: Nairobi</p>
+                        </div>
+                        <div class="vote-detail">
+                            <p>Registered voters: 1000000</p>
+                        </div>
                     </div>
                 </div>
-                <table class="offices-details">
-                    <tr>
-                      <th>First Name</th>
-                      <th>Last Name</th>
-                      <th>Party</th>
-                      <th>No. Of Votes</th>
-                    </tr>
-                    <tr>
-                      <td><a href="politician-details.html">Barrack</a></td>
-                      <td>Obama</td>
-                      <td>Democrats</td>
-                      <td>1000340</td>
-                    </tr>
-                    <tr>
-                        <td><a href="politician-details.html">Donald </a></td>
-                        <td>Trump</td>
-                        <td>Republican</td>
-                        <td>2000340</td>
-                    </tr>
-                      <tr>
-                        <td><a href="politician-details.html">Hillary </a></td>
-                        <td>Clinton</td>
-                        <td>Conservative Party</td>
-                        <td>5000340</td>
-                     </tr>
-                      <tr>
-                        <td><a href="politician-details.html">Antony</a> </td>
-                        <td>Mundia</td>
-                        <td>Eagles Party</td>
-                        <td>050</td>
-                      </tr>
+                <table class="offices-details" id="office-details-table">
                 </table>
             </div>
+        <script src="static/js/office-details.js"></script>
         <div class="footer">
             <p>&copy; 2019 Politico</p>
         </div>
