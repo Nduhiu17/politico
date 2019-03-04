@@ -40,20 +40,23 @@
             <div class="sign-in-heading">
                 Register a party 
             </div>
-            <form class="sign-up-form"> 
+            <form class="sign-up-form" onsubmit="event.preventDefault(); postParty(event)">
                 <label >Party name</label>
-                <input type="text" placeholder="Party name..">
+                <input type="text" placeholder="Party name.." id="party-name">
                 <label >Party Slogan</label>
-                <input type="text" placeholder="Party slogan..">
+                <input type="text" placeholder="Party slogan.." id="party-slogan">
+                <label >HQ Address</label>
+                <input type="text" placeholder="Hq address.." id="party-address">
                 <label >Logo</label>
-                <input type="text" placeholder="Logo url..">
-                <input type="submit" value="Create">
+                <input type="text" placeholder="Logo url.." id="party-logo">
+               <button class="login-button" type="submit">Create</button>
             </form>
         </div>
         <div class="right-form-container">
 
         </div>
     </div>
+    <script src="static/js/parties.js"></script>
     <div class="footer">
         <p>&copy; 2019 Politico</p>
     </div>
