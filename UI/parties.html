@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./static/css/styles.css">
     <title>All Parties</title>
 </head>
-<body>
+<body onload="loadParties()">
     <div class="navbar">
         <div class="nav-logo">
             <div class="logo-img">
@@ -22,13 +22,13 @@
             <a href="create-party.html">Create Party</a>
             </div>
             <div class="sign-in">
-              <a href="index.html">Offices</a> 
+              <a href="index.html">Offices</a>
             </div>
             <div class="profile-div">
-             <a href="profile.html">Profile</a>  
+             <a href="profile.html">Profile</a>
             </div>
             <div class="profile-div">
-                <a href="signin.html">Logout</a> 
+                <a href="signin.html">Logout</a>
             </div>
         </div>
     </div>
@@ -36,34 +36,14 @@
         <div class="all-parties-heading">
             All Parties
         </div>
-        <div class="main-container">
-             <table class="offices-details">
-                 <tr>
-                 <th>Party Name</th>
-                 <th>Slogan</th>
-               
-                 </tr>
-                 <tr>
-                 <td><a href="party-details.html">Demograts</a></td>
-                 <td>Yes we can</td>
-                 </tr>
-                 <tr>
-                     <td>Conservative</td>
-                     <td>Together we can make it</td>
-                 </tr>
-                 <tr>
-                     <td>Lions Party </td>
-                     <td>We will overcome</td>
-                 </tr>
-                 <tr>
-                     <td>Indepence</td>
-                     <td>Freedom to all</td>
-                 </tr>
+        <div class="main-container" >
+             <table class="offices-details" id="main-container-parties">
              </table>
          </div>
     </div>
+    <script src="static/js/parties.js"></script>
     <div class="footer">
         <p>&copy; 2019 Politico</p>
-    </div> 
+    </div>
 </body>
 </html>
