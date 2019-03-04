@@ -200,6 +200,7 @@ td {
     display: flex;
     color: #171616;
     margin-bottom: 51px;
+    margin-bottom: 51px;
 }
 
 .container-form{
@@ -383,6 +384,9 @@ input[type=text],input[type=email], input[type=password],select {
 
 .delete-party{
     background-color: red;
+    margin: 8px;
+    padding: 10px;
+    border-radius: 11px;
 }
 
 .apply{
