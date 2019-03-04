@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./static/css/styles.css">
     <title>Edit Party</title>
 </head>
-<body>
+<body onload="onloadUpdateParty()">
     <div class="navbar">
         <div class="nav-logo">
             <div class="logo-img">
@@ -19,16 +19,16 @@
         </div>
         <div class="nav-items">
             <div class="sign-up">
-           <a href="create-office.html">Create Office</a> 
+           <a href="create-office.html">Create Office</a>
             </div>
             <div class="sign-in">
-                <a href="parties.html">Parties</a> 
+                <a href="parties.html">Parties</a>
             </div>
             <div class="profile-div">
-               <a href="profile.html">Profile</a> 
+               <a href="profile.html">Profile</a>
             </div>
             <div class="profile-div">
-                <a href="signin.html">Logout</a> 
+                <a href="signin.html">Logout</a>
             </div>
         </div>
     </div>
@@ -38,13 +38,11 @@
         </div>
         <div class="container-form">
             <div class="sign-in-heading">
-                Modify Details 
+                Modify Details
             </div>
-            <form class="sign-up-form"> 
+            <form class="sign-up-form" onsubmit="onsubmitUpdatedParty(event)">
                 <label >Party name</label>
-                <input type="text" placeholder="Party name..">
-                <label >Party Slogan</label>
-                <input type="text" placeholder="Party slogan..">
+                <input name="party-name" type="text" placeholder="Party name.." id="update-party-name">
                 <input type="submit" value="Save">
             </form>
         </div>
@@ -52,6 +50,7 @@
 
         </div>
     </div>
+    <script src="static/js/party-details.js"></script>
     <div class="footer">
         <p>&copy; 2019 Politico</p>
     </div>

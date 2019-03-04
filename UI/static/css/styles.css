@@ -380,6 +380,9 @@ input[type=text],input[type=email], input[type=password],select {
 
 .edit-party{
     background-color: #3359DF;
+    margin: 8px;
+    padding: 10px;
+    border-radius: 11px;
 }
 
 .delete-party{
