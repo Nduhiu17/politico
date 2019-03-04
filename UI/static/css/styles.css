@@ -4,7 +4,7 @@ html,body{
     font-size: 12.5px;
     color: #fff;
     margin: 0;
-
+    height: 200px;
 }
 
 .navbar {
@@ -199,6 +199,7 @@ td {
 .main-form-container{
     display: flex;
     color: #171616;
+    margin-bottom: 51px;
 }
 
 .container-form{
