@@ -8,7 +8,7 @@
     <title>Political Offices</title>
     <link rel="stylesheet" href="./static/css/styles.css">
 </head>
-<body>
+<body onload="loadApplications()">
     <div class="container">
         <div class="navbar">
             <div class="nav-logo">
@@ -41,7 +41,7 @@
             <div class="container-title">
                 <p>Pending Applications</p>
             </div>
-            <table class="offices-details">
+            <table class="offices-details" id="main-container-applications">
                 <tr>
                   <th>First Name</th>
                   <th>Last Name</th>
@@ -56,11 +56,11 @@
                   <td>Governor</td>
                   <td>Jubilee</td>
                   <td>Nairobi</td>
-                  <td><button class="approve-button" id="edit-party-button" onclick="updateParty()">Approve</button></td>
+                  <td><button class="approve-button" id="edit-party-button">Approve</button></td>
                 </tr>
-                <tr>
             </table>
         </div>
+        <script src="static/js/applications.js"></script>
         <div class="footer">
             <p>&copy; 2019 Politico</p>
         </div>
