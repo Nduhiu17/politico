@@ -40,16 +40,17 @@
             <div class="sign-in-heading">
                 Apply for candidature
             </div>
-            <div class="office-name">
-                <label>Office Name</label>
-                <input type="text"placeholder="office name">
-            </div>
-            <form class="sign-up-form"> 
+
+            <form class="sign-up-form" onsubmit="event.preventDefault(); postApplication(event)">
                 <div class="petition-div">
-                    <div class="application-details">
-                        <label>Application Details</label>
-                    </div>
-                    <textarea class="petition" placeholder="Write application here.."></textarea>
+                      <div class="office-name">
+                        <label>Office Name</label>
+                        <input type="text"placeholder="office name" id="application-office-name">
+                     </div>
+                    <div class="office-name">
+                        <label>Party Name</label>
+                        <input type="text"placeholder="office name" id="application-party-name">
+                     </div>
                   </div>
                 <input type="submit" value="Apply">
             </form>
@@ -58,6 +59,7 @@
 
         </div>
     </div>
+    <script src="static/js/applications.js"></script>
     <div class="footer">
         <p>&copy; 2019 Politico</p>
     </div>

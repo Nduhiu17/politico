@@ -1,6 +1,9 @@
 const id = localStorage.getItem("partyId");
 let currentToken = `Bearer ${localStorage.getItem("token")}`;
 
+if(localStorage.getItem("token") == null) {
+    window.location.replace("signin.html");
+}
 
 const getPartyDetail = () => {//function that gets party details from api
     return fetch(`https://politico-api-server.herokuapp.com/api/v2/parties/${id}`, {
