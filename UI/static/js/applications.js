@@ -1,4 +1,5 @@
 let currentToken = `Bearer ${localStorage.getItem("token")}`;
+let baseUrl = 'https://politico-api-server.herokuapp.com';
 
 if(localStorage.getItem("token") == null){
     window.location.replace("signin.html");
@@ -36,7 +37,45 @@ let postApplication = () => {//function to get data from forms
             window.alert(res.error)
         }else {
             if (res.status === 201) {//checking a successful creation of an application
-                window.location.replace("parties.html");//redirecting to home page after a successful login
+                window.location.replace("index.html");//redirecting to home page after a successful login
             }
     }})
 }
+
+let loadApplications = () => {
+    getApplications(`${baseUrl}/api/v2/applications`).then(res => {
+        const allData = res.data;
+        document.getElementById('main-container-applications').innerHTML = generateAllApplications(allData);
+    });
+};
+
+const getApplications = (url) => {//function to get applications from api
+    return fetch(url,{ method: "GET",headers: { "Content-Type": "application/json;charset=UTF-8", Authorization: currentToken}})
+        .then((res) => res.json())
+        .catch(() => {
+    });
+};
+
+const generateAllApplications = (allData) => {//function to render applications to html
+    let output = `<tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Office</th>
+                <th>Party</th>
+                <th>County</th>
+                <th>Action</th>
+            </tr>`;
+    allData.reverse().forEach((application) => {//looping over the fetched data
+        output +=
+
+               ` <tr>
+                    <td>${application.user.firstname}</td>
+                    <td>${application.user.lastname}</td>
+                    <td>${application.office.name}</td>
+                    <td>${application.party.name}</td>
+                    <td>${application.user.county}</td>
+                    <td><button class="approve-button">Approve</button></td>
+                </tr>`
+    });
+    return output
+};
