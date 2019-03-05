@@ -493,3 +493,9 @@ button.delete-party{
 button.edit-party{
     border: none;
 }
+
+.approve-button{
+    background: #FFF;
+    border: navajowhite;
+    color: red;
+}

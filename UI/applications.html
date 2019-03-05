@@ -8,7 +8,7 @@
     <title>Political Offices</title>
     <link rel="stylesheet" href="./static/css/styles.css">
 </head>
-<body onload="loadOffices()">
+<body>
     <div class="container">
         <div class="navbar">
             <div class="nav-logo">
@@ -24,31 +24,43 @@
                <a href="parties.html">Parties</a>
                </div>
                <div class="sign-in">
-                 <a href="create-party.html">Create Party</a>
+                 <a href="create-party.html">Create Party</a> 
                </div>
                <div class="sign-in">
-                <a href="create-office.html">Create Office</a>
-              </div>
-                <div class="sign-in">
-                <a href="apply-candindature.html">Become Candidate</a>
+                <a href="create-office.html">Create Office</a> 
               </div>
                <div class="profile-div">
-                  <a href="profile.html">Profile</a>
+                  <a href="profile.html">Profile</a> 
                </div>
                <div class="profile-div">
-               <a href="signin.html">Logout</a>
+               <a href="signin.html">Logout</a> 
             </div>
            </div>
         </div>
-        <div class="main-container" >
+        <div class="main-container">
             <div class="container-title">
-                <p>Political Offices</p>
+                <p>Pending Applications</p>
             </div>
-            <table class="offices-details" id="main-container-offices">
+            <table class="offices-details">
+                <tr>
+                  <th>First Name</th>
+                  <th>Last Name</th>
+                  <th>Office</th>
+                  <th>Party</th>
+                  <th>County</th>
+                  <th>Action</th>
+                </tr>
+                <tr>
+                  <td> <a href="office-details.html">Antony</a></td>
+                  <td>Nduhiu</td>
+                  <td>Governor</td>
+                  <td>Jubilee</td>
+                  <td>Nairobi</td>
+                  <td><button class="approve-button" id="edit-party-button" onclick="updateParty()">Approve</button></td>
+                </tr>
+                <tr>
             </table>
         </div>
-        <script src="static/js/offices.js"></script>
-        <script src="static/js/office-details.js"></script>
         <div class="footer">
             <p>&copy; 2019 Politico</p>
         </div>
