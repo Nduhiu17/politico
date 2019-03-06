@@ -40,8 +40,8 @@ let postParty = () => {//function to log in a user
         if(res.error){
             window.alert(res.error)
         }else {
-            if (res.status === 201) {//checking a successful login
-                window.location.replace("parties.html");//redirecting to home page after a successful login
+            if (res.status === 201) {//checking a successful post of a party
+                window.location.replace("parties.html");//redirecting to parties page
             }
     }})
 }
@@ -68,7 +68,6 @@ const generateAllParties = (allData) => {//function to render parties to html
                  </tr>`;
     allData.reverse().forEach((party) => {//looping over the fetched data
         output +=
-
             `<tr><td><a onclick="goToPartyDetailsPage(${party.id})">${party.name}</a></td>
                  <td>${party.slogan}</td>
                  </tr>`

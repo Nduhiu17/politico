@@ -67,15 +67,55 @@ const generateAllApplications = (allData) => {//function to render applications 
             </tr>`;
     allData.reverse().forEach((application) => {//looping over the fetched data
         output +=
-
                ` <tr>
                     <td>${application.user.firstname}</td>
                     <td>${application.user.lastname}</td>
                     <td>${application.office.name}</td>
                     <td>${application.party.name}</td>
                     <td>${application.user.county}</td>
-                    <td><button class="approve-button">Approve</button></td>
+                    <td><button class="approve-button" id="approve-button" onclick="postCandindateObject(${application.id})">Approve</button></td>
                 </tr>`
     });
     return output
 };
+
+let postCandindateObject = (application) => {
+    getApplications(`${baseUrl}/api/v2/applications`).then(res => {
+        const allData = res.data;
+            allData.reverse().forEach((obj) => {//looping over the fetched data
+            if(obj.id == application){
+                let data = {
+                party:(obj.party.id).toString(),
+                office:(obj.office.id).toString(),
+                candidate:(obj.user.id).toString()
+                }
+   const postCandidateApi = (data)=>{
+    return fetch(`https://politico-api-server.herokuapp.com/api/v2/office/${obj.office.id}/register`, {
+        method: 'POST',
+        headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json',
+             Authorization: currentToken
+        },
+        body: JSON.stringify(data)
+
+        })
+        .then((res) =>{
+            return res.json()
+        })
+};
+
+       postCandidateApi(data).then(res=> {
+        if(res.error){
+            window.alert(res.error)
+        }else {
+            if (res.status === 201) {//checking a successful post of a candidate
+                window.alert(res.message)
+                window.location.replace("applications.html");//redirecting to applications page
+            }
+    }})
+    }
+    });
+    });
+};
+
