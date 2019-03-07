@@ -2,8 +2,9 @@ const id = localStorage.getItem("officeId");
 const el = document.querySelector("#office-details-main");
 let currentToken = `Bearer ${localStorage.getItem("token")}`;
 const pl = document.querySelector("#politician-details-main");
-const userId = localStorage.getItem("candidate");
-
+const userId = (localStorage.getItem("candidate"));
+// const idStr = id.toString()
+// const userIdStr = userId.toString()
 
 if(localStorage.getItem("token") == null) {
     window.location.replace("signin.html");
@@ -140,9 +141,11 @@ const postVoteApi = (vote)=>{
 
     postVoteApi(vote).then(res=> {
         if(res.error){
-            window.alert(res.error)
-        }else {
-            if (res.status === 201) {//checking a successful post of a party
-                window.location.replace("index.html");//redirecting to parties page
-            }
-    }})
+            alert(res.error)
+        }
+         if(res.message) {
+            alert(res.message)
+             window.location.replace("office-details.html");
+
+        }
+})
