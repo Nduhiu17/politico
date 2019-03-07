@@ -54,6 +54,7 @@ const generateAllCandidates = (allData) => {//rendering candidate details
                       <th>No. Of Votes</th>
                     </tr>`;
     allData.reverse().forEach((candidate) => {//looping over the fetched data for candidates
+        debugger
         output +=
 
             `        <tr>
