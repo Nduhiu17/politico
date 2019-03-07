@@ -89,6 +89,7 @@ let postCandindateObject = (application) => {
                 office:(obj.office.id).toString(),
                 candidate:(obj.user.id).toString()
                 }
+   localStorage.setItem("candidate",(obj.user.id)) //set obj.user.id
    const postCandidateApi = (data)=>{
     return fetch(`https://politico-api-server.herokuapp.com/api/v2/office/${obj.office.id}/register`, {
         method: 'POST',
