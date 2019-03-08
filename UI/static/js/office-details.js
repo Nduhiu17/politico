@@ -3,8 +3,6 @@ const el = document.querySelector("#office-details-main");
 let currentToken = `Bearer ${localStorage.getItem("token")}`;
 const pl = document.querySelector("#politician-details-main");
 const userId = (localStorage.getItem("candidate"));
-// const idStr = id.toString()
-// const userIdStr = userId.toString()
 
 if(localStorage.getItem("token") == null) {
     window.location.replace("signin.html");
@@ -51,6 +49,8 @@ const generateAllCandidates = (allData) => {//rendering candidate details
                       <th>First Name</th>
                       <th>Last Name</th>
                       <th>Party</th>
+                      <th>Party Slogan</th>
+                      <th>County</th>
                       <th>No. Of Votes</th>
                     </tr>`;
     allData.reverse().forEach((candidate) => {//looping over the fetched data for candidates
@@ -61,6 +61,8 @@ const generateAllCandidates = (allData) => {//rendering candidate details
                       <td><a onclick="goToCandidateDetailsPage(${candidate.id})">${candidate.firstname}</a></td>
                       <td>${candidate.lastname}</td>
                       <td>${candidate.party.name}</td>
+                      <td>${candidate.party.slogan}</td>
+                       <td>${candidate.county}</td>
                       <td>${candidate.votes}</td>
                     </tr>`
     });
