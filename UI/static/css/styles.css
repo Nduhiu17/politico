@@ -5,6 +5,8 @@ html,body{
     color: #fff;
     margin: 0;
     height: 200px;
+    padding: 2px;
+
 }
 
 .navbar {
@@ -505,4 +507,27 @@ button.edit-party{
     display: flex;
     justify-content: space-between;
     min-height: -webkit-fill-available;
+}
+
+.navbar-admin{
+    display: flex;
+    background: #FFF;
+    padding: 0px 10px;
+    box-shadow: 0 0 1px 1px rgba(20,23,28,0.1), 0 3px 1px 0 rgba(20,23,28,0.1);
+    color: black;
+    margin-top: 4em;
+}
+
+.nav-items-admin{
+    display: flex;
+    justify-content: space-around;
+    margin-left: auto;
+    margin-right: auto;
+    align-self: center;
+      color:red;
+
+}
+
+.nav-items-admin > div{
+  margin:10px;
 }
