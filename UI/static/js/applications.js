@@ -63,6 +63,7 @@ const generateAllApplications = (allData) => {//function to render applications 
                 <th>Office</th>
                 <th>Party</th>
                 <th>County</th>
+                <th>Application Date</th>
                 <th>Action</th>
             </tr>`;
     allData.reverse().forEach((application) => {//looping over the fetched data
@@ -73,6 +74,7 @@ const generateAllApplications = (allData) => {//function to render applications 
                     <td>${application.office.name}</td>
                     <td>${application.party.name}</td>
                     <td>${application.user.county}</td>
+                    <td>${application.date_created}</td>
                     <td><button class="approve-button" id="approve-button" onclick="postCandindateObject(${application.id})">Approve</button></td>
                 </tr>`
     });

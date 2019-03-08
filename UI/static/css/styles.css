@@ -499,3 +499,10 @@ button.edit-party{
     border: navajowhite;
     color: red;
 }
+
+#main-profile-body {
+    color: #171616;
+    display: flex;
+    justify-content: space-between;
+    min-height: -webkit-fill-available;
+}

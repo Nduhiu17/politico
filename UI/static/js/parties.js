@@ -64,12 +64,16 @@ const generateAllParties = (allData) => {//function to render parties to html
     let output = `<tr>
                  <th>Party Name</th>
                  <th>Slogan</th>
+                 <th>Head Quaters</th>
+                 <th>Registration Date</th>
                
                  </tr>`;
     allData.reverse().forEach((party) => {//looping over the fetched data
         output +=
             `<tr><td><a onclick="goToPartyDetailsPage(${party.id})">${party.name}</a></td>
                  <td>${party.slogan}</td>
+                 <td>${party.hqaddress}</td>
+                 <td>${party.date_created}</td>
                  </tr>`
     });
     return output
