@@ -16,7 +16,41 @@ Politico enables citizens give their mandate to politicians running for differen
 The templates design have been using HTML and CSS3 with Flex box technology.
 
 
-Please click [gh-pages](https://nduhiu17.github.io/politico/UI) to view my UI pages
+### Please click [gh-pages](https://nduhiu17.github.io/politico/UI) to access and interact with the website.
+
+##### Admin login details:
+> email: admin@gmail.com
+> password: Password2015$$
+
+
+#### How to vote:
+1. Create an account
+2. Login into the application
+3. Click on the office you want to vote
+4. Click on the candidate that you want to vote
+
+
+#### How to apply for candidature
+1. Create an account
+2. Login into the application
+3. Click become candidate link on the nav bar
+4. Fill in the form, submit and wait for admin to approave
+
+#### How to approve an application
+1. Login as an admin with the details given above
+2. On the admin dashboard click on the pending approvals
+3. Click on approve to approve
+
+
+#### How to create a party 
+1. Login as admin with the details given above
+2. Click on the create party link, fill in the details and submit
+
+#### How to create an office
+1. Login as admin with the details given above
+2. Click on the create office link, fill in the details and submit
+
+
 
 The following are the templates screenshots:
 

@@ -4,7 +4,6 @@ let pd = document.querySelector("#main-profile-body");
 
 const loadProfileDetails = () => {
 let user = JSON.parse(localStorage.getItem('user'));
-console.log("my user",user.firstname)
     pd.innerHTML = `
         <div class="personal-details">
             <div class="photo-details">

@@ -1,10 +1,17 @@
 
 let baseUrl = 'https://politico-api-server.herokuapp.com';
 let currentToken = `Bearer ${localStorage.getItem("token")}`;//getting token from local storage and assigning it to a reusable variable
-
+let adm = document.querySelector("#navbar-admin");
 if(localStorage.getItem("token") == null){
     window.location.replace("signin.html");
 }
+
+let user = JSON.parse(localStorage.getItem('user'));
+if(user.email != "admin@gmail.com"){
+ adm.style.display = 'none';
+}
+
+
 let loadOffices = () => {
     getOffices(`${baseUrl}/api/v2/offices`).then(res => {
         const allData = res.data;
@@ -75,3 +82,4 @@ let postOffice = () => {//function that collects offices details from forms
             }
     }})
 }
+
