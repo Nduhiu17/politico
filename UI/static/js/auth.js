@@ -28,7 +28,6 @@ let login = () => {
             window.alert(res.error)
         }else {
             localStorage.setItem("token",res .access_token)
-            console.log(res.data)
             localStorage.setItem("user",JSON.stringify(res.data));
             if (res.message === "logged in") {//checking a successful login
                 window.location.replace("index.html");//redirecting to home page after a successful login
@@ -64,6 +63,11 @@ let register = () => {//function that collects registration details
     let passporturl = document.getElementById('signup-passporturl').value;
     let password = document.getElementById('signup-password').value;
     let rpassword = document.getElementById('signup-rpassword').value;
+    if(password != rpassword){
+    alert("Passwords do not match")
+    window.location.replace("signup.html");//redirecting to index page after a successful registration
+
+    }
     let data = {//asigning variable to sign up details
         email: email,
         password: password,
@@ -83,6 +87,7 @@ let register = () => {//function that collects registration details
         }else {
             console.log(res)
             localStorage.setItem("token",res.token)
+            localStorage.setItem("user",JSON.stringify(res.data));
             if (res.message === "User registered") {//checking a successful registration
                 window.location.replace("index.html");//redirecting to index page after a successful registration
             }
