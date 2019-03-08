@@ -57,8 +57,8 @@ const generateAllCandidates = (allData) => {//rendering candidate details
         debugger
         output +=
 
-            `        <tr>
-                      <td><a onclick="goToCandidateDetailsPage(${candidate.id})">${candidate.firstname}</a></td>
+            `        <tr onclick="goToCandidateDetailsPage(${candidate.id})">
+                      <td>${candidate.firstname}</td>
                       <td>${candidate.lastname}</td>
                       <td>${candidate.party.name}</td>
                       <td>${candidate.party.slogan}</td>

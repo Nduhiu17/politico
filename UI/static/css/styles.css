@@ -414,6 +414,10 @@ a {
 a:hover {
 color: #3359DF;
 }
+tr:hover {
+color: #3359DF;
+}
+
 
 
 input[type=submit]:hover{
