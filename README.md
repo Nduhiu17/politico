@@ -1,4 +1,4 @@
-### Polito
+# Politico
 
 #### Description
 Politico enables citizens give their mandate to politicians running for different government offices while building trust in the process through transparency. 
@@ -16,7 +16,7 @@ Politico enables citizens give their mandate to politicians running for differen
 The templates design have been using HTML and CSS3 with Flex box technology.
 
 
-### Please click [gh-pages](https://nduhiu17.github.io/politico/UI) to access and interact with the website.
+### Please click [Hosted Link](https://nduhiu17.github.io/politico/UI) to access and interact with the website.
 
 ##### Admin login details:
 > email: admin@gmail.com
