@@ -87,7 +87,7 @@ let register = () => {//function that collects registration details
         }else {
             console.log(res)
             localStorage.setItem("token",res.token)
-            localStorage.setItem("user",JSON.stringify(res.data));
+            localStorage.setItem("user",JSON.stringify(res.user));
             if (res.message === "User registered") {//checking a successful registration
                 window.location.replace("index.html");//redirecting to index page after a successful registration
             }
