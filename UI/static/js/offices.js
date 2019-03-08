@@ -34,7 +34,7 @@ const generateAllOffices = (allData) => {//function that renders the offices to 
                 </tr>`;
     allData.reverse().forEach((office) => {//looping over the fetched data
         output +=
-            `<tr><td> <a onclick="goToOfficeDetailsPage(${office.id})">${office.name}</a></td>
+            `<tr onclick="goToOfficeDetailsPage(${office.id})"><td>${office.name}</a></td>
                   <td>${office.office_type}</td>
                   <td>${office.candindates.length}</td>
                 </tr>`

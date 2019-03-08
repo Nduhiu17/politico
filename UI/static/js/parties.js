@@ -70,7 +70,7 @@ const generateAllParties = (allData) => {//function to render parties to html
                  </tr>`;
     allData.reverse().forEach((party) => {//looping over the fetched data
         output +=
-            `<tr><td><a onclick="goToPartyDetailsPage(${party.id})">${party.name}</a></td>
+            `<tr onclick="goToPartyDetailsPage(${party.id})"><td>${party.name}</td>
                  <td>${party.slogan}</td>
                  <td>${party.hqaddress}</td>
                  <td>${party.date_created}</td>
