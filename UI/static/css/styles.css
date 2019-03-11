@@ -5,8 +5,13 @@ html,body{
     color: #fff;
     margin: 0;
     height: 200px;
-    padding: 2px;
+    padding: 5px;
+    background-color: #ddd;
 
+}
+
+table{
+    background-color: #fff;
 }
 
 .navbar {
@@ -94,14 +99,15 @@ html,body{
 }
 
 .office-details-header {
-    color: #171616;
+    color: #3359DF;
     background-image: url(logo3.jpeg);
-    font-weight: 600;
+    font-weight:400;
     font-size: 12px;
     background-repeat: no-repeat;
     background-position: center;
     margin-left: 7px;
-    margin-bottom: 5px;
+    letter-spacing: 2px;
+    margin-bottom: 7px;
 }
 
 .office-details-header > div {
@@ -352,7 +358,7 @@ input[type=text],input[type=email], input[type=password],select {
 }
 
 @media(max-width:469px){
-    .personal-details,{
+    .personal-details{
       width: 100%;
       }
 }
